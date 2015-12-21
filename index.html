@@ -26,9 +26,19 @@
                 </ul>
                 <ul>
                     <ul class="nav navbar-nav navbar-form">
-                        <li><form method="get" action="http://www.google.com/search"> 
-                                <input type="text" name="q" size="31" maxlength="255" value="" /> 
-                            <input type="submit" value="Search" /></li>
+                        <li>
+                            <form method="get" action="http://www.google.com/search">
+                                <input type="text"   name="q" size="25" style="color:#808080;"
+                                       maxlength="255" value="Google site search"
+                                       onfocus="if (this.value == this.defaultValue)
+                                                   this.value = '';
+                                               this.style.color = 'black';" onblur="if (this.value == '')
+                                                           this.value = this.defaultValue;
+                                                       "/>
+                                <input type="submit" value="Go!" />
+                                <input type="hidden" name="sitesearch" value="google.com" />
+                            </form>                            
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="Login.html">Sign Up</a></li>
@@ -258,58 +268,58 @@
 
 
             <nav class="panel-footer">
-            <!--Current time-->
-            <footer class="container-fluid text-center">
-                <p>
-                    <script type="text/javascript">
-                        tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
-                        tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                <!--Current time-->
+                <footer class="container-fluid text-center">
+                    <p>
+                        <script type="text/javascript">
+                            tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                            tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 
-                        function GetClock() {
-                            var d = new Date();
-                            var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getYear();
-                            if (nyear < 1000)
-                                nyear += 1900;
-                            var nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds(), ap;
+                            function GetClock() {
+                                var d = new Date();
+                                var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getYear();
+                                if (nyear < 1000)
+                                    nyear += 1900;
+                                var nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds(), ap;
 
-                            if (nhour == 0) {
-                                ap = " AM";
-                                nhour = 12;
+                                if (nhour == 0) {
+                                    ap = " AM";
+                                    nhour = 12;
+                                }
+                                else if (nhour < 12) {
+                                    ap = " AM";
+                                }
+                                else if (nhour == 12) {
+                                    ap = " PM";
+                                }
+                                else if (nhour > 12) {
+                                    ap = " PM";
+                                    nhour -= 12;
+                                }
+
+                                if (nmin <= 9)
+                                    nmin = "0" + nmin;
+                                if (nsec <= 9)
+                                    nsec = "0" + nsec;
+
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + ap + "";
                             }
-                            else if (nhour < 12) {
-                                ap = " AM";
+
+                            window.onload = function () {
+                                GetClock();
+                                setInterval(GetClock, 1000);
                             }
-                            else if (nhour == 12) {
-                                ap = " PM";
-                            }
-                            else if (nhour > 12) {
-                                ap = " PM";
-                                nhour -= 12;
-                            }
+                        </script>
+                    <div id="clockbox"></div>
+                    </p>
 
-                            if (nmin <= 9)
-                                nmin = "0" + nmin;
-                            if (nsec <= 9)
-                                nsec = "0" + nsec;
+                    <div class="t2 clearfix">        
 
-                            document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + ap + "";
-                        }
-
-                        window.onload = function () {
-                            GetClock();
-                            setInterval(GetClock, 1000);
-                        }
-                    </script>
-                <div id="clockbox"></div>
-                </p>
-
-                <div class="t2 clearfix">        
-
-                    <div id="copyright">
-                        &copy; Untitled. All rights reserved. | Design: <a href="..\index.html">Jianfeng Tan</a>
-                    </div>
-                    <p>For other inquiries, you may email me at <a href="roy_tan001@hotmail.com"> roy_tan001@hotmail.com</a></p>
-            </footer>
+                        <div id="copyright">
+                            &copy; Untitled. All rights reserved. | Design: <a href="index.html">Jianfeng Tan</a>
+                        </div>
+                        <p>For other inquiries, you may email me at <a href="roy_tan001@hotmail.com"> roy_tan001@hotmail.com</a></p>
+                </footer>
             </nav>
             <!--                                                            <a href="#" class="btn btn-primary btn-default">More information</a>                             
                                                                         <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-inbox"></span>More information</a>                            -->
