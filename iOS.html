@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+
+<html lang="en" manifest="example.appcache">
+    <head>
+        <title>iOS</title>
+        <link rel="shortcut icon" href="image/icon2.ico" type="image/x-icon" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+        <!--<link rel="stylesheet" href="../css/main.css" type="text/css">-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+               
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <img src="image/icon.png" alt="logo" width="50" height="50" align="left"> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Windows.html">Windows</a></li>
+                        <li><a href="Linux.html">Linux</a></li>
+                        <li><a href="iOS.html">iOS</a></li>
+                        <li><a href="Android.html">Android</a></li>
+                        <li><a href="Quiz.html" class="current-page-item">Quiz</a></li> 
+                        <li><a href="Resume.html">About</a></li>        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="main">
+            <div class="container">
+                <div class="row main-row">
+                    <div class="12u">
+
+            
+                        <section>
+                            <h2>Introduce iOS</h2>
+                            <p>iOS is the operating system that runs on iPad, iPhone, and iPod touch devices. The operating system manages the device hardware and provides the technologies required to implement native apps. The operating system also ships with various system apps, such as Phone, Mail, and Safari, that provide standard system services to the user. </p>
+                            <p>The <em class="newTerm">iOS Software Development Kit (SDK)</em> contains the tools and interfaces needed to develop, install, run, and test native apps that appear on an iOS device’s Home screen. Native apps are built using the iOS system frameworks and Objective-C language and run directly on iOS. Unlike web apps, native apps are installed 
+                                physically on a device and are therefore always available to the user, even when the device is in Airplane mode. They reside next to other system apps, and both the app and any user data is synced to the user’s computer through iTunes.</p>
+                        </section>
+                        <p>Source: From Wikipedia</p>
+                        <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-th"></span> More information</a> 
+                        <hr>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h4 class="text-center">If you want to know your coordinates, please click the button to get your coordinates. <button  onclick="getLocation()">Try It</button></h4>        
+        </br>
+        
+        <!--<a onclick="getLocation()" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-th"></span> Try It!</a>-->
+        <p id="demo"></p> 
+
+        <script>
+            var x = document.getElementById("demo");
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                        "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>  
+        <!--<hr>-->
+        
+        
+        <div id="footer-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="8u 12u(mobile)">
+
+                        <section>
+                            <h2>How about a truckload of links?</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="3u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <div>
+                                                <h4>Develop</h4>
+                                            </div>
+                                            <li><a href="https://developers.google.com/analytics/devguides/collection/ios/v3/" target="_blank">Analytics</a></li>
+                                            <li><a href="https://developers.google.com/identity/sign-in/ios/" target="_blank">Sign in with Google</a></li>
+                                            <li><a href="https://developers.google.com/maps/documentation/ios-sdk/" target="_blank">Maps</a></li>
+                                            <li><a href="https://developers.google.com/places/ios-api/" target="_blank">Places</a></li>                         
+                                       
+                                        </ul>
+                                    </div>
+                                    <div class="3u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <div>
+                                                <h4>Engage</h4>
+                                            </div>
+                                            <li><a href="https://developers.google.com/cloud-messaging/ios/client" target="_blank">Analytics</a></li>
+                                            <li><a href="https://support.google.com/adwords/answer/6032059" target="_blank">Sign in with Google</a></li>
+                                            <li><a href="https://developers.google.com/app-invites/ios/" target="_blank">Maps</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="3u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <div>
+                                                <h4>Earn</h4>
+                                            </div>
+                                            <li><a href="https://developers.google.com/admob/ios/quick-start" target="_blank">Analytics</a></li>
+ 
+                                        </ul>
+                                    </div>
+                                    <div class="3u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <div>
+                                                <h4>More Resources</h4>
+                                            </div>
+                                            <li><a href="https://developers.google.com/android/" target="_blank">Google APIs for Android</a></li>
+                                            <li><a href="https://console.developers.google.com/start" target="_blank">Google Developers Console </a></li>
+                                            <li><a href="https://design.google.com/" target="_blank">Google Design</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="4u 12u(mobile)">
+
+                        <section>
+                            <h2>Cloud Messaging available for iOS!</h2>
+                            <p>Send data from your server to your users' devices, 
+                                and receive messages from devices on the same connection..</p>
+                            <a href="https://developers.google.com/cloud-messaging/" target="_blank" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-th"></span> Google Cloud Messaging</a>
+                        </section>
+
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="12u">
+            <nav class="panel-footer">                            
+                            <footer class="controls">
+                                    <div id="copyright">
+                                        &copy; Untitled. All rights reserved. | Design: <a href="..\index.html">Jianfeng Tan</a>
+                                    </div>
+                                    <p>For other inquiries, you may email me at <a href="roy_tan001@hotmail.com"> roy_tan001@hotmail.com</a></p>
+                            </footer>
+            </nav>
+
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+<!--     Scripts 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-viewport.min.js"></script>
+    <script src="js/util.js"></script>
+    [if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]
+    <script src="js/main.js"></script>-->
+
+</body>
+</html>

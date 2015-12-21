@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.example.bc"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Program note!</name>
+
+    <description>
+        My homepage.
+    </description>
+
+    <author href="https://build.phonegap.com" email="roy_tan001@hotmail.com">
+        Jianfeng Tan
+    </author>
+    
+    <!-- Don't require any special permissions. -->
+    <preference name="permissions" value="none" />
+    
+    <!-- https://github.com/apache/cordova-plugin-whitelist</widget>    
+    -->
+    
+    <!-- Don't block any requests -->
+    <access origin="*" />
+    
+    <!-- Enable the whitelist plugin -->
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    
+ 
+    <!-- Allow links and other types of URLs to open -->
+    <allow-intent href="http://jianfengtan.github.io/" />
+    <allow-intent href="https://jianfengtan.github.io/" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <!-- Allow Android Market -->
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    
+    <!-- Allow iTunes
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform> -->
+	
+     <!-- Allow Windows Phone -->
+    <platform name="winphone">
+    </platform>
+
+</widget>

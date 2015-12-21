@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" manifest="example.appcache">
+    <head>
+        <title>Programming Notes</title>
+        <link rel="shortcut icon" href="image/icon2.ico" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="css/bootstrap.css">   
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <img src="image/icon.png" href="index.html" alt="logo" width="50" height="50" align="left">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Windows.html" class="current-page-item">Windows</a></li>
+                    <li><a href="Linux.html">Linux</a></li>
+                    <li><a href="iOS.html">iOS</a></li>
+                    <li><a href="Android.html">Android</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li> 
+                    <li><a href="Resume.html">About</a></li>        
+                </ul>
+                <ul>
+                    <ul class="nav navbar-nav navbar-form">
+                        <li><form method="get" action="http://www.google.com/search"> 
+                                <input type="text" name="q" size="31" maxlength="255" value="" /> 
+                            <input type="submit" value="Search" /></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Login.html">Sign Up</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign in <b class="caret"></b></a>
+                            <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox"> Remember me
+                                                    </label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+                                    <input class="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter">
+                                </li>
+
+                            </ul>
+                    </ul>   
+            </div>
+        </nav>
+
+        <div class="container text-center">
+            <div class="col-sm-12">
+                <div class="well">
+                    <h1>Programming Notes!</h1>
+                    <hr>
+                    <h4>Share ideas, share experiences, share knowledges ...</h4>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container media-middle">    
+            <audio align="right" controls autoplay>
+                <source src="media/Song.mp3" type="audio/mpeg" align="middle">
+            </audio> 
+        </div>    
+
+        <hr>
+        <!-- Windows part-->
+        <h2 class="container text-center">Windows information</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+
+
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="image/Banner_1.png" alt="Image">
+                                <div class="carousel-caption">
+                                    <h3>Hi！</h3>
+                                    <p>Welcome my to my website.</p>
+                                </div>      
+                            </div>
+
+                            <div class="item">
+                                <img src="image/Banner.png" alt="Image">
+                                <div class="carousel-caption">
+                                    <h3>What is next!</h3>
+                                    <p>Follow me.</p>
+                                </div>      
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-sm-4">
+                    <div class="well">
+                        <h4>Windows Phone 10</h4>
+                        <a href="https://en.wikipedia.org/wiki/Windows_10_Mobile" target="_blank">Windows Phone 10</a>
+                    </div>
+                    <div class="well">
+                        <h4>Get the updated Windows 10 SDK</h4>
+                        <a href="https://dev.windows.com/en-us/downloads">Download tools</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--Linux part-->
+            <div class="container text-center">    
+                <h2>Linux information</h2>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="image/debian.jpg" class="img-responsive" style="width:100%" alt="Image">
+                        <a href="https://www.debian.org/distrib/netinst" target="_blank" class="btn btn-primary btn-warning"><span class="glyphicon glyphicon-inbox"></span> Installing Debian</a>                                        
+                    </div>
+                    <div class="col-sm-3"> 
+                        <img src="image/ubuntu.jpg" class="img-responsive" style="width:100%" alt="Image">
+                        <a href="https://http://www.ubuntu.com/download" target="_blank" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-inbox"></span> Download Ubuntu</a>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <p>Linux family</p>
+                            <a href="Linux.html">More information</a>
+                        </div>
+                        <div class="well">
+                            <p>Linux system</p>
+                            <a href="Linux.html">More information</a>                                            
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="well">
+                            <p>Linux command</p>
+                            <a href="https://linuxcommand.org/learning_the_shell.php">More information</a>                                            
+                        </div>
+                        <div class="well">
+                            <p>Linux news</p>
+                            <a href="">More information</a>                                            
+                        </div>
+                    </div>  
+                </div>
+                <hr>
+            </div>
+
+            <div class="container text-center">    
+                <h2>Development software</h2>
+                <br>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href="http://developer.android.com/sdk/installing/index.html">  
+                            <img src="image/Android Studio.jpg" class="img-responsive" style="width:100%" alt="Image">
+                        </a>
+                        <a href="http://developer.android.com/sdk/installing/index.html">   
+                            <p>Android Studio</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-2"> 
+                        <a href="http://www.codeblocks.org/">   
+                            <img src="image/CodeBlocks.jpg" class="img-responsive" style="width:100%" alt="Image"> 
+                        </a>
+                        <a href="http://www.codeblocks.org/">        
+                            <p>CodeBlocks</p>  
+                        </a>
+                    </div>
+                    <div class="col-sm-2"> 
+                        <a href="https://netbeans.org/">   
+                            <img src="image/NetBeans.jpg" class="img-responsive" style="width:100%" alt="Image"> 
+                        </a>
+                        <a href="https://netbeans.org/">        
+                            <p>netBeans</p>  
+                        </a>
+                    </div>
+                    <div class="col-sm-2"> 
+                        <a href="https://eclipse.org/downloads/">   
+                            <img src="image/eclipse.jpg" class="img-responsive" style="width:100%" alt="Image"> 
+                        </a>
+                        <a href="https://eclipse.org/downloads/">        
+                            <p>Eclipse</p>  
+                        </a>
+                    </div>
+                    <div class="col-sm-2"> 
+                        <a href="https://www.jetbrains.com/idea/download//">   
+                            <img src="image/IntelliJ IDEA.jpg" class="img-responsive" style="width:100%" alt="Image"> 
+                        </a>
+                        <a href="https://www.jetbrains.com/idea/download/">        
+                            <p>IntelliJ IDEA</p>  
+                        </a>
+                    </div>     
+                    <div class="col-sm-2"> 
+                        <a href="https://notepad-plus-plus.org/">   
+                            <img src="image/notpandpp.jpg" class="img-responsive" style="width:100%" alt="Image"> 
+                        </a>
+                        <a href="https://notepad-plus-plus.org/">        
+                            <p>notepad++</p>  
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>    
+            <!-- Begin Comments JavaScript Code -->
+            <script type="text/javascript" async>
+                function ajaxpath_5675884b4163f(url) {
+                    return window.location.href == '' ? url : url.replace('&s=', '&s=' + escape(window.location.href));
+                }
+                (function () {
+                    document.write('<div id="fcs_div_5675884b4163f"><a title="free comment script" href="http://www.freecommentscript.com">&nbsp;&nbsp;<b>Free HTML User Comments</b>...</a></div>');
+                    fcs_5675884b4163f = document.createElement('script');
+                    fcs_5675884b4163f.type = "text/javascript";
+                    fcs_5675884b4163f.src = ajaxpath_5675884b4163f((document.location.protocol == "https:" ? "https:" : "http:") + "//www.freecommentscript.com/GetComments2.php?p=5675884b4163f&s=&Size=10#!5675884b4163f");
+                    setTimeout("document.getElementById('fcs_div_5675884b4163f').appendChild(fcs_5675884b4163f)", 1);
+                })();
+            </script>
+            <noscript>
+            <div>
+                <a href="http://www.freecommentscript.com" title="free html user comment box">Free Comment Script</a>
+            </div>
+            </noscript><!-- End Comments JavaScript Code -->
+
+
+            <nav class="panel-footer">
+            <!--Current time-->
+            <footer class="container-fluid text-center">
+                <p>
+                    <script type="text/javascript">
+                        tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+                        tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+                        function GetClock() {
+                            var d = new Date();
+                            var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getYear();
+                            if (nyear < 1000)
+                                nyear += 1900;
+                            var nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds(), ap;
+
+                            if (nhour == 0) {
+                                ap = " AM";
+                                nhour = 12;
+                            }
+                            else if (nhour < 12) {
+                                ap = " AM";
+                            }
+                            else if (nhour == 12) {
+                                ap = " PM";
+                            }
+                            else if (nhour > 12) {
+                                ap = " PM";
+                                nhour -= 12;
+                            }
+
+                            if (nmin <= 9)
+                                nmin = "0" + nmin;
+                            if (nsec <= 9)
+                                nsec = "0" + nsec;
+
+                            document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + ap + "";
+                        }
+
+                        window.onload = function () {
+                            GetClock();
+                            setInterval(GetClock, 1000);
+                        }
+                    </script>
+                <div id="clockbox"></div>
+                </p>
+
+                <div class="t2 clearfix">        
+
+                    <div id="copyright">
+                        &copy; Untitled. All rights reserved. | Design: <a href="..\index.html">Jianfeng Tan</a>
+                    </div>
+                    <p>For other inquiries, you may email me at <a href="roy_tan001@hotmail.com"> roy_tan001@hotmail.com</a></p>
+            </footer>
+            </nav>
+            <!--                                                            <a href="#" class="btn btn-primary btn-default">More information</a>                             
+                                                                        <a href="#" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-inbox"></span>More information</a>                            -->
+    </body>
+
+
+</html>

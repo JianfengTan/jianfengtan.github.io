@@ -1,0 +1,44 @@
+CACHE MANIFEST
+# 2015-12-20:v1
+
+# Explicitly cached entries
+index.html
+Android.html
+iOS.html
+Linux.html
+Login.html
+Quiz.html
+Resume.html
+Windows.html
+css/bootstrap.css
+css/bootstrap.min.css
+css/bootstrap-theme.css
+css/bootstrap-theme.min.css
+css/main.css
+css/quiz_style.css
+
+# offline.html will be displayed if the user is offline
+FALLBACK:
+/ /offline.html
+
+# All other resources (e.g. sites) require the user to be online. 
+NETWORK:
+*
+
+# Additional resources to cache
+CACHE:
+images/Android Studio.jpg
+images/Banner.png
+images/CodeBlocks.jpg
+images/Banner_1.png
+images/debian.jpg
+images/eclipse.jpg
+images/icon.png
+images/icon2.ico
+images/icon2.png
+images/IntelliJ IDEA.jpg
+images/NetBeans.jpg
+images/notpandpp.jpg
+images/ubuntu.jpg
+media/10.mp4
+media/Song.mp3

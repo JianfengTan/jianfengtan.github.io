@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html lang="en" manifest="example.appcache">
+    <head>
+        <title>Linux</title>
+        <link rel="shortcut icon" href="image/icon2.ico" type="image/x-icon" />        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <img src="image/icon.png" alt="logo" width="50" height="50" align="left"> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Windows.html">Windows</a></li>
+                        <li><a href="Linux.html" class="current-page-item">Linux</a></li>
+                        <li><a href="iOS.html">iOS</a></li>
+                        <li><a href="Android.html">Android</a></li>
+                        <li><a href="Quiz.html">Quiz</a></li> 
+                        <li><a href="Resume.html">About</a></li>        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        <svg width="500" height="100" align="middle">
+        <circle id="circle1" cx="20" cy="20" r="10"
+                style="stroke: none; fill: #ff0000;"/>
+        </svg>
+
+        <script>
+            var timerFunction = null;
+
+            function startAnimation() {
+                if(timerFunction == null) {
+                    timerFunction = setInterval(animate, 20);
+                }
+            }
+
+            function stopAnimation() {
+                if(timerFunction != null){
+                    clearInterval(timerFunction);
+                    timerFunction = null;
+                }
+            }
+
+            function animate() {
+                var circle = document.getElementById("circle1");
+                var x = circle.getAttribute("cx");
+                var newX = 2 + parseInt(x);
+                if(newX > 500) {
+                    newX = 20;
+                }
+                circle.setAttribute("cx", newX);
+            }
+        </script>
+        <br/>
+        <input class="btn btn-primary btn-info" value="Start Animation" onclick="startAnimation();">
+        <input class="btn btn-primary btn-info" value="Stop Animation" onclick="stopAnimation();">
+
+        <hr>    
+
+        <div id="main">
+            <div class="container">
+                <div class="row main-row">
+                    <div class="4u 12u(mobile)">
+
+                        <section>
+                            <h2>Free operating system</h2>
+                            <hr>
+                            <ul class="small-image-list">
+                                <li>
+                                    <h4>Debian</h4>
+                                    <p>Debian is a free operating system (OS) for your computer. An operating system is the set of basic programs and utilities that make your computer run.</p>
+                                    <a href="https://www.debian.org/distrib/netinst"  target="_blank" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-th"></span> Installing Debian</a> 
+                                </li>
+                                <li>
+                                    <h4>Ubuntu</h4>
+                                    <p>Ubuntu is an open source software platform that runs from the cloud, to the smartphone, to all your things.</p>
+                                    <a href="https://www.ubuntu.com/download"  target="_blank" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-th"></span> Download Ubuntu</a>                                     
+                                </li>
+                            </ul>
+                        </section>
+
+                        <hr>
+                        <section>
+                            <h2>Other OS link</h2>
+                            <div>
+                                <div class="row">
+                                    <div class="6u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <li><a href="http://zorinos.com/download.html">Zorin OS</a></li>
+                                            <li><a href="https://www.archlinux.org/download/">Arch Linux</a></li>
+                                            <li><a href="http://www.pardus.org.tr/eng/download.html">Pardus Linux</a></li>
+                                            <li><a href="http://software.opensuse.org/421/en">openSUSE</a></li>
+                                            <li><a href="https://www.gentoo.org/downloads/mirrors/">Gentoo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="6u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <li><a href="https://getfedora.org/">Fedora</a></li>
+                                            <li><a href="http://www.gnewsense.org/Mirrors">gNewSense</a></li>
+                                            <li><a href="http://sourceforge.net/projects/xfardic/files/">Parsix GNU/Linux</a></li>
+                                            <li><a href="http://www.kubuntu.org/getkubuntu/">Kubuntu</a></li>
+                                            <li><a href="http://www.bodhilinux.com/download/">Bodhi Linux</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="8u 12u(mobile) important(mobile)">
+
+                        <section class="right-content">
+                            <h2>Linux</h2>
+                            <hr>
+
+                            <p><strong>Linux </strong>was originally developed as a free operating system for personal 
+                                computers based on the Intel x86 architecture, but has since been ported 
+                                to more computer hardware platforms than any other operating system.
+                                Thanks to its dominance on smartphones, Android, which is built on top of 
+                                the Linux kernel, has the largest installed base of all general-purpose operating systems.
+                                Linux, in its original form, is also the leading operating system on servers and other 
+                                big iron systems such as mainframe computers and virtually all fastest supercomputers, 
+                                but is used on only around 1.6% of desktop computers with Linux-based Chrome OS taking 
+                                about 5% of the overall and nearly 20% of the sub-$300 notebook sales. Linux also runs on 
+                                embedded systems, which are devices whose operating system is typically built into the firmware 
+                                and is highly tailored to the system; this includes smartphones and tablet computers running 
+                                Android and other Linux derivatives, TiVo and similar DVR devices, network routers, facility 
+                                automation controls, televisions, video game consoles, and smartwatches.</p>
+                            <p>The development of Linux is one of the most prominent examples of free and open-source 
+                                software collaboration. The underlying source code may be used, modified and distributed 
+                                – commercially or non-commercially – by anyone under the terms of its respective licenses, 
+                                such as the GNU General Public License. Typically, Linux is packaged in a form known as a Linux 
+                                distribution, for both desktop and server use. Some of the popular mainstream Linux distributions 
+                                are Debian, Ubuntu, Linux Mint, Fedora, openSUSE, Arch Linux and Gentoo, together with commercial 
+                                Red Hat Enterprise Linux and SUSE Linux Enterprise Server distributions. Linux distributions include 
+                                the Linux kernel, supporting utilities and libraries, and usually a large amount of application 
+                                software to fulfill the distribution's intended use.</p>
+                            <p>Distributions oriented toward desktop use typically include a windowing system, such as X11, Mir 
+                                or a Wayland implementation, and an accompanying desktop environment, such as GNOME or the KDE 
+                                Software Compilation; some distributions may also include a less resource-intensive desktop, 
+                                such as LXDE or Xfce. Distributions intended to run on servers may omit all graphical environments 
+                                from the standard install, and instead include other software to set up and operate a solution stack
+                                such as LAMP. Because Linux is freely redistributable, anyone may create a distribution for any 
+                                intended use.</p>
+                        </section>
+                        <p>Source: From Wikipedia</p>
+                        <a href="https://en.wikipedia.org/wiki/Linux" class="btn btn-primary btn-info" target="_blank" ><span class="glyphicon glyphicon-th"></span> More information</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div id="footer-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="8u 12u(mobile)">
+
+                        <section>
+                            <h2>Linux Debuggers for C++</h2>
+                            <hr>
+                            <div>
+                                <div class="row">
+                                    <div class="3u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <li><a href="http://www.affinic.com/?page_id=109">The Affinic debugger</a></li>
+                                            <li><a href="http://www.codeblocks.org/">Code::Blocks</a></li>
+                                            <li><a href="http://codelite.org/">Codelite</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="3u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <li><a href="http://www.gnu.org/software/ddd/">Gnu DDD</a></li>
+                                            <li><a href="http://www.eclipse.org/">Eclipse front-ending gdb</a></li>
+                                            <li><a href="http://www.gnu.org/software/emacs/">GNU Emacs' GDB mode</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="3u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <li><a href="https://www.kdevelop.org/">The KDevelop debugger</a></li>
+                                            <li><a href="https://wiki.gnome.org/Apps/Nemiver">Nemiver</a></li>
+                                            <li><a href="https://netbeans.org/">Oracle NetBeans</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="3u 12u(mobile)">
+                                        <ul class="link-list">
+                                            <li><a href="http://www.qt.io/Product/Qt-Core-Features--Functions/Developer-Tools/">Digia Qt Creator</a></li>
+                                            <li><a href="http://www.slickedit.com/">SlickEdit</a></li>
+                                            <li><a href="http://zerobugs.codeplex.com/">The Zerobugs UI</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <div class="4u 12u(mobile)">
+
+                        <section>
+                            <h2>Other information</h2>
+                            <hr>
+                            <p>SSH Secure Shell Client
+                                <a href="https://infotech.brooklyn.cuny.edu/labs/unix.htm" target="_blank">Remote Control</a>
+                            </p>
+                            <p>Linux Command
+                                <a href="https://linuxcommand.org/learning_the_shell.php" target="_blank">Linux Command</a>
+                            </p>
+                        </section>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="12u">
+            <nav class="panel-footer">
+                        <footer class="controls">
+                                    <div id="copyright">
+                                        &copy; Untitled. All rights reserved. | Design: <a href="..\index.html">Jianfeng Tan</a>
+                                    </div>
+                                    <p>For other inquiries, you may email me at <a href="roy_tan001@hotmail.com"> roy_tan001@hotmail.com</a></p>
+                        </footer>
+            </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

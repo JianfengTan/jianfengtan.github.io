@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en" manifest="example.appcache">
+    <head>
+        <title>Android</title>
+        <link rel="shortcut icon" href="image/icon2.ico" type="image/x-icon" />        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <img src="image/icon.png" alt="logo" width="50" height="50" align="left">                        
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Windows.html">Windows</a></li>
+                        <li><a href="Linux.html">Linux</a></li>
+                        <li><a href="iOS.html">iOS</a></li>
+                        <li><a href="Android.html" class="current-page-item">Android</a></li>
+                        <li><a href="Quiz.html">Quiz</a></li> 
+                        <li><a href="Resume.html">About</a></li>        
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+
+            <canvas id="myCanvas" width="1130" height="100" style="border:3px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.font = "80px Arial";
+                ctx.textAlign = 'center';
+                ctx.strokeStyle = "#000000";
+                ctx.fillStyle = "#C0C0C0";
+                ctx.lineWidth = 3;
+                ctx.fillText("Welcome to Android world!", 550, 70);
+                ctx.strokeText("Welcome to Android world!", 550, 70);
+
+
+            </script>   
+
+            <hr>    
+            <div id="main">
+                <div class="container">
+                    <div class="row main-row">
+                        <div class="3u 12u(mobile)">
+
+                            <section>
+                                <h2>Updates news...</h2>
+                                <div>
+                                    <h3>Google Play services 8.3 available now!</h3>
+                                </div>
+                                <p>We’re happy to announce Google Play services 8.3, which includes
+                                    a revamped Sign In API as well as updates to Location Services and App Invites.</p>
+                            </section>
+
+                            <section>
+                                <h3>Google Play services 8.1 available now!</h3>
+                                <p>The latest release adds support for Marshmallow permissions, ambient
+                                    maps on Android Wear, updates for App Invites and Nearby, and a new Play Games Player Stats API.</p>
+                                <a href="https://android-developers.blogspot.com/2015/09/google-play-services-81-get-ready-for.html" target="_blank" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-th"></span> Play Services 8.1 Announcement</a>
+                            </section>
+
+                        </div>
+                        <div class="6u 12u(mobile) important(mobile)">
+
+                            <section class="middle-content">
+                                <h2>Android history...</h2>
+                                <ul type="disc">
+                                    <li>The birth of Android:</li>
+                                    <ul>
+                                        <li>Andy Rubin, Rich Miner, Nick Sears and Chris White created Android in 2003</li>
+                                    </ul> 
+                                    <li>Android under Google's ownership</li>
+                                    <ul>
+                                        <li>In 2005, Google acquired Android Inc. for around 50 million dollars and the Google Mobile Division was born.</li>
+                                    </ul>                                 
+                                    <li>The first Android phone: September 2008</li>
+                                    <li>Android 1.5 - Cupcake: April 27, 2009</li>
+                                    <li>Android 1.6 - Donut: September 15, 2009</li>
+                                    <li>Android 2.0 - Eclair: October 26, 2009</li>
+                                    <li>Android 2.2 - Froyo: May 20, 2010</li>
+                                    <li>Android 2.3 - Gingerbread: December 6, 2010</li>
+                                    <li>Android 3.0 - Honeycomb: February 22, 2011</li>
+                                    <li>Android 4.0 - Ice Cream Sandwich: October 18, 2011</li>
+                                    <li>Android 4.1 - Jelly Bean: July 9, 2012</li>
+                                    <li>Android 4.4 - KitKat: October 31, 2013</li>
+                                    <li>Android 5.0 Lollipop: November 12, 2014</li>
+                                    <li>Android 6.0 marshmallow: October 5, 2015</li>
+                                    <p>
+                                    <a href="https://www.android.com/versions/marshmallow-6-0/" target="_blank" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-th"></span> Android 6.0 Version</a>
+                                    </p>
+                                </ul>
+                            </section>
+
+                        </div>
+                        <div class="3u 12u(mobile)">
+
+                            <section>
+                                <h2>More ways to enhance your app</h2>
+                                <ul class="small-image-list">
+                                    <li>
+                                        <h4>Use location to power context</h4>
+                                        <p>Respond to where users are and what they're doing. Enrich your app with high-accuracy location reporting, geofencing, and activity recognition.</p>
+                                        <a href="http://developer.android.com/training/location/index.html" target="_blank" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-th"></span> Location Awareness </a>
+                                    </li>
+                                    <li>
+                                        <h4>Support voice actions</h4>
+                                        <p>Let users engage with your app quickly and conveniently through voice commands. Respond to system actions or add custom actions of your own.</p>
+                                        <a href="https://https://developers.google.com/voice-actions/" target="_blank" class="btn btn-primary btn-info"><span class="glyphicon glyphicon-th"></span> Voice Actions </a>
+                                    </li>
+                                </ul>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <hr>
+            <div id="footer-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="12u 12u(mobile)">
+
+                            <section>
+                                <h2>Useful links</h2>
+                                <div>
+                                    <div class="row">
+                                        <div class="3u 12u(mobile)">
+                                            <ul class="link-list">
+                                                <span>
+                                                    <h4>Develop</h4>
+                                                </span>
+                                                <li><a href="https://developers.google.com/analytics/devguides/collection/android/v4/start" target="_blank">Analytics</a></li>
+                                                <li><a href="https://developers.google.com/identity/sign-in/android/" target="_blank">Sign in with Google</a></li>
+                                                <li><a href="https://developers.google.com/maps/documentation/android-api/" target="_blank">Maps</a></li>
+                                                <li><a href="https://developers.google.com/places/android-api/" target="_blank">Places</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="3u 12u(mobile)">
+                                            <ul class="link-list">
+                                                <div>
+                                                    <h4>Engage</h4>
+                                                </div>
+                                                <li><a href="https://developers.google.com/cloud-messaging/android/client" target="_blank">Google Cloud Messaging</a></li>
+                                                <li><a href="https://developers.google.com/app-indexing/" target="_blank">App Indexing</a></li>
+                                                <li><a href="https://support.google.com/adwords/answer/6032059" target="_blank">App Install Ads</a></li>
+                                                <li><a href="https://developers.google.com/app-invites/" target="_blank">App Invites</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="3u 12u(mobile)">
+                                            <ul class="link-list">
+                                                <div>
+                                                    <h4>Earn</h4>
+                                                </div>
+                                                <li><a href="https://developers.google.com/cloud-messaging/android/client" target="_blank">AdMob</a></li>
+                                                <li><a href="https://developers.google.com/app-indexing/" target="_blank">In-App Billing and Subscriptions</a></li>
+                                                <li><a href="https://support.google.com/adwords/answer/6032059" target="_blank">Android Pay</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="3u 12u(mobile)">
+                                            <ul class="link-list">
+                                                <div>
+                                                    <h4>Tools</h4>
+                                                </div>
+                                                <li><a href="https://developers.google.com/android/guides/overview" target="_blank">Google Play Services </a></li>
+                                                <li><a href="https://developer.android.com/sdk/index.html" target="_blank">Android Studio</a></li>
+                                                <li><a href="https://developer.android.com/sdk/index.html" target="_blank">Android SDK</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="12u">
+                                        <nav class="panel-footer">
+                            <footer class="controls">
+                                    <div id="copyright">
+                                        &copy; Untitled. All rights reserved. | Design: <a href="..\index.html">Jianfeng Tan</a>
+                                    </div>
+                                    <p>For other inquiries, you may email me at <a href="roy_tan001@hotmail.com"> roy_tan001@hotmail.com</a></p>
+                            </footer>
+                                        </nav>       
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
